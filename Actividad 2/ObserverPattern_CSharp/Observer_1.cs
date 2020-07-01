@@ -10,7 +10,7 @@ namespace Actividad_2.ObserverPattern_CSharp
         {
             if ((subject as Subject).State < 3)
             {
-                Console.WriteLine("Observer #1 (Michael): Reacted to the event.");
+                Console.WriteLine("Suscriber-(Michael): Reacted to the event.");
             }
         }
     }

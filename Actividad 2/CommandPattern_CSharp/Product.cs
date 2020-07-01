@@ -20,12 +20,12 @@ namespace Actividad_2.CommandPattern_CSharp
 
         public void Buy()
         {
-            Console.WriteLine("Product [ Name: " + Name + ", Prince: " + Price +", Quatity: " + Quatity + " ] bought");
+            Console.WriteLine("Product Name: " + Name + ", Prince: " + Price +", Quatity: " + Quatity + " was bought");
         }
 
         public void Sell()
         {
-            Console.WriteLine("Product [ Name: " + Name + ", Prince: " + Price + ", Quatity: " + Quatity + " ] sold");
+            Console.WriteLine("Product Name: " + Name + ", Prince: " + Price + ", Quatity: " + Quatity + " was sold");
         }
     }
 }

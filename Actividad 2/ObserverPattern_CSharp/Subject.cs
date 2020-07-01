@@ -14,19 +14,19 @@ namespace Actividad_2.ObserverPattern_CSharp
 
         public void Attach(IObserver observer)
         {
-            Console.WriteLine("Subject: Attached an observer.");
+            Console.WriteLine("Source of content: Attached a suscribers.");
             this._observers.Add(observer);
         }
 
         public void Detach(IObserver observer)
         {
             this._observers.Remove(observer);
-            Console.WriteLine("Subject (Sender): Detached an observer.");
+            Console.WriteLine("Source of content: Detached a suscribers.");
         }
 
         public void Notify()
         {
-            Console.WriteLine("Subject (Sender): Notifying observers...");
+            Console.WriteLine("Source of content: Notifying suscribers...");
 
             foreach (var observer in _observers)
             {
@@ -36,12 +36,12 @@ namespace Actividad_2.ObserverPattern_CSharp
 
         public void SomeBusinessLogic()
         {
-            Console.WriteLine("\nSubject (Sender): I'm doing something important.");
+            Console.WriteLine("\nSource of content: I'm doing something important.");
             this.State = new Random().Next(0, 10);
 
             Thread.Sleep(15);
 
-            Console.WriteLine("Subject (Sender): My state has just changed to: " + this.State);
+            Console.WriteLine("Source of content: My state has just changed to: " + this.State);
             this.Notify();
         }
     }
